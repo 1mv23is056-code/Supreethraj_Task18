@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="greetingHeader">Hello</h1>
+
+    <div class="box-container">
+        <div class="color-box" id="redBox" onclick="changeBoxColor('redBox', 'red')">red</div>
+        <div class="color-box" id="blueBox" onclick="changeBoxColor('blueBox', 'blue')">blue</div>
+        <div class="color-box" id="greenBox" onclick="changeBoxColor('greenBox', 'green')">green</div>
+        <div class="color-box" id="yellowBox" onclick="changeBoxColor('yellowBox', 'yellow')">yellow</div>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="usernameInput" placeholder="Enter your name here">
+        
+        <button id="greetButton" onclick="updateGreeting()">Greet Me!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
